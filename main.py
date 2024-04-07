@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # metric parameters
-KETONES_RANGE = (0,8)
-GLUCOSE_RANGE = (50,150)
+KETONES_RANGE = (0,10)
+GLUCOSE_RANGE = (40,160)
 WORKOUT_TIME = timedelta(hours=1)
 
 # style parameters
@@ -76,7 +76,6 @@ def visualize_fasting(data_file, save=True):
 
 if __name__ == '__main__':
 
-    for data_file in os.listdir('./data/'):
-        visualize_fasting(data_file, save=True)
-    ##visualize_fasting('2023-03-23.csv', save=False)
-
+    ##for data_file in os.listdir('./data/'):
+        ##visualize_fasting(data_file, save=True)
+    visualize_fasting('2024-04-01.csv', save=False)
